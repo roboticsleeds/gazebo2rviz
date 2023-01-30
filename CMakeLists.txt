@@ -3,6 +3,7 @@ project(gazebo2rviz)
 
 find_package(catkin REQUIRED COMPONENTS
   rospy
+  pysdf
 )
 
 catkin_python_setup()
@@ -10,7 +11,7 @@ catkin_python_setup()
 catkin_package(
 #  INCLUDE_DIRS include
 #  LIBRARIES gazebo2rviz
-  CATKIN_DEPENDS rospy 
+  CATKIN_DEPENDS rospy pysdf
   #  DEPENDS python-rospkg
 )
 
